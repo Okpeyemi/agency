@@ -1,0 +1,29 @@
+.services {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.services:hover {
+  cursor: pointer;
+  border-top: 1px solid var(--primaryColor);
+  border-left: 1px solid var(--primaryColor);
+  border-right: 1px solid var(--primaryColor);
+  border-bottom: 1px solid var(--primaryHoverColor);
+  background-color: var(--primaryHoverColor);
+}
+
+.services .icon {
+  margin: 1rem 0;
+}
+
+.services .icon i {
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  text-align: justify;
+  font-size: 25px;
+  background-color: var(--emphazingColor);
+}

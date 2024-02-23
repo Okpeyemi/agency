@@ -1,0 +1,110 @@
+.brand {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.brand .blur {
+  width: 300px;
+  height: 400px;
+  background-color: var(--secondaryColor);
+  border-radius: 10%;
+  filter: blur(100px);
+  position: absolute;
+  z-index: 2;
+  animation: rotateCircle 5s linear infinite;
+}
+
+.brand .branding {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.brand .branding h1 {
+  font-size: 100px;
+}
+
+.brand .branding h4 {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand .branding .start {
+  margin: 2rem;
+}
+
+.brand .branding .start span {
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 1rem;
+  background-color: var(--secondaryColor);
+}
+
+.brand .branding .start span i {
+  background-color: var(--titleWhite);
+  border-radius: 30px;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  color: var(--backgroundColor);
+}
+
+@keyframes anime {
+  0% {
+    top: 0%;
+    left: 0%;
+  }
+
+  25% {
+    top: 14%;
+    left: 14%;
+  }
+
+  50% {
+    top: 34%;
+    left: 34%;
+  }
+
+  75% {
+    top: 50%;
+    left: 50%;
+  }
+
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg); /* Démarre la rotation à 0 degrés */
+  }
+  to {
+    transform: rotate(360deg); /* Termine la rotation à 360 degrés */
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .brand .blur {
+    width: 200px;
+    height: 300px;
+  }
+
+  .brand .branding h1 {
+    font-size: 70px;
+  }
+
+  .brand .branding h4 {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

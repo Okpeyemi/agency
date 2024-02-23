@@ -1,0 +1,45 @@
+.service {
+  display: flex;
+  margin-top: 5rem;
+  flex-direction: column;
+}
+
+.service .serviceTitle {
+  text-align: center;
+}
+
+.service .servicePart {
+  width: 60%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1440px) {
+  .service .servicePart {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service .servicePart {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 777px) {
+  .service .servicePart {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .service .servicePart {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

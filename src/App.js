@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
 
-import { Header, Service } from "./containers";
+import { Header, Service, About, Work, Contact, Footer } from "./containers";
 
 const App = () => {
   return (
     <div>
       <Header />
       <Service />
+      <About />
+      <Work />
+      <Contact />
+      <Footer />
     </div>
   );
 };

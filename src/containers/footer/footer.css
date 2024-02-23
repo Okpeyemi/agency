@@ -1,0 +1,22 @@
+.footer {
+  border-top: 1px solid gray;
+}
+
+.footer .address {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .address span {
+    text-align: center;
+  }
+}

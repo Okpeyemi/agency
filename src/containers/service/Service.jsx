@@ -11,6 +11,9 @@ const Service = () => {
         <Services />
         <Services />
         <Services />
+        <Services />
+        <Services />
+        <Services />
       </div>
     </div>
   );

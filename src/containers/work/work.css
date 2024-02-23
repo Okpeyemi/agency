@@ -1,0 +1,44 @@
+.work {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.work h1 {
+  margin: 3rem;
+  text-align: center;
+}
+
+.work .worker {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 850px) {
+  .work {
+    width: 90%;
+  }
+
+  .work .worker > * {
+    flex-basis: 25%; /* Chaque élément occupe 50% de la largeur disponible */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    width: 100%;
+  }
+
+  .work .worker > * {
+    flex-basis: 30%; /* Chaque élément occupe 50% de la largeur disponible */
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .work .worker > * {
+    flex-basis: 50%; /* Chaque élément occupe 50% de la largeur disponible */
+  }
+}

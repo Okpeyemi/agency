@@ -27,3 +27,7 @@
   font-size: 25px;
   background-color: var(--emphazingColor);
 }
+
+.services .text h5 {
+  width: 200px;
+}
